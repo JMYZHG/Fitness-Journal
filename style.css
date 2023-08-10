@@ -79,20 +79,6 @@ nav .logo {
     z-index: -1;
 }
 
-@media (min-aspect-ratio: 16/9){
-    .backvid{
-        width: 100%;
-        height: auto;
-    }
-}
-
-@media (max-aspect-ratio: 16/9){
-    .backvid{
-        width: auto;
-        height: 100%;
-    }
-}
-
 .main__btn {
     text-decoration: none;
     display: inline-block;
@@ -114,6 +100,7 @@ nav .logo {
     background-color: rgb(39, 30, 30);
     font-size: 70px;
     padding-bottom: 150px;
+
 }
 
 .workout__title { 
@@ -176,6 +163,7 @@ nav .logo {
     margin-top: auto;
     font-size: 70px;
     padding-bottom: 150px;
+    padding-top: 100px;
     
 }
 .nutrition__title {
@@ -205,20 +193,36 @@ nav .logo {
 /* PROGRESS SECTION*/
 .progress__section {
     background-color: rgb(39, 30, 30);
-    margin-top: auto;
+    height: 100vh;
     font-size: 70px;
     padding-bottom: 150px;
+    padding-top: 200px;
+
 }
 .progress__title {
-    padding-top: 50px;
+    padding-top: 10px;
     text-align: center;
     font-size: 3rem;
     font-weight: bold;
     color: rgb(255, 255, 255);
 }
+@media (min-aspect-ratio: 16/9){
+    .backvid{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9){
+    .backvid{
+        width: auto;
+        height: 100%;
+    }
+}
+
 @media (max-width: 650px) {
     .workout__title {
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
     .workout__items {
         font-size: .7rem;
@@ -242,10 +246,14 @@ nav .logo {
         width: 50%;
         height: 100%;
     }
+    .nutrition__title {
+        font-size: 1.5rem;
+    }
 }
 @media (max-width: 841px) {
     .card {
         width: 50%;
         height: 50%;
+        padding-left: 20px;
     }
 }

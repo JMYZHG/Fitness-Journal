@@ -26,7 +26,7 @@ nav {
     position: sticky;
     top: 0;
     left: 0;
-    padding: 20px 8%;
+    padding: 10px 8%;
     display:  flex;
     align-items: center;
     justify-content: space-between;
@@ -41,7 +41,7 @@ nav .logo {
 .nav__item {
     list-style: none;
     display: inline-block;
-    margin-left: 40px;
+    margin-left: 30px;
 }
 
 .nav__links {
@@ -101,6 +101,11 @@ nav .logo {
     border: 2px solid white;
     padding: 12px 50px;
     border-radius: 40px;
+    transition: .5s;
+}
+.main__btn:hover {
+    -webkit-text-stroke: 1px grey;
+    color: transparent;
 
 }
 
@@ -108,7 +113,7 @@ nav .logo {
 .workout__section {
     background-color: rgb(39, 30, 30);
     font-size: 70px;
-    
+    padding-bottom: 150px;
 }
 
 .workout__title { 
@@ -117,6 +122,15 @@ nav .logo {
     font-size: 3rem;
     font-weight: bold;
     color: rgb(255, 255, 255);
+}
+.workout__description {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    color: white;
+    font-size: 1rem;
+
 }
 .workout__items {
     margin-top: 50px;
@@ -161,10 +175,10 @@ nav .logo {
     background-color: rgb(39, 30, 30);
     margin-top: auto;
     font-size: 70px;
-    height: 100vh;
+    padding-bottom: 150px;
+    
 }
 .nutrition__title {
-    padding-top: 50px;
     text-align: center;
     font-size: 3rem;
     font-weight: bold;
@@ -172,7 +186,7 @@ nav .logo {
 }
 
 .nutrition__items {
-    margin-top: 50px;
+    margin-top: 100px;
     display: flex;
     justify-content: space-evenly;
     color: rgb(88, 85, 85);
@@ -187,12 +201,30 @@ nav .logo {
     text-align: start;
     font-size:  1rem;
 }
+
+/* PROGRESS SECTION*/
+.progress__section {
+    background-color: rgb(39, 30, 30);
+    margin-top: auto;
+    font-size: 70px;
+    padding-bottom: 150px;
+}
+.progress__title {
+    padding-top: 50px;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
 @media (max-width: 650px) {
     .workout__title {
         font-size: 1rem;
     }
     .workout__items {
-        font-size: .5rem;
+        font-size: .7rem;
+    }
+    .workout__items ul li {
+        font-size: 1rem;
     }
     .content__container .content__heading {
         font-size: 3rem;
@@ -215,8 +247,5 @@ nav .logo {
     .card {
         width: 50%;
         height: 50%;
-    }
-    .nutrition__section {
-        padding-bottom: 1000px;
     }
 }

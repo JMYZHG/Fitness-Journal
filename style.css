@@ -164,19 +164,29 @@ nav .logo {
     height: 100vh;
 }
 .nutrition__title {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
     padding-top: 50px;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
 }
 
 .nutrition__items {
+    margin-top: 50px;
     display: flex;
     justify-content: space-evenly;
-    font-size: .5rem;
+    color: rgb(88, 85, 85);
+    text-align: center;
+    flex-wrap: wrap;
+    font-size: 1rem;
 }
-
+    
+.nutrition__items ul li {
+    margin: 10px;
+    list-style-type: none;
+    text-align: start;
+    font-size:  1rem;
+}
 @media (max-width: 650px) {
     .workout__title {
         font-size: 1rem;
@@ -199,5 +209,14 @@ nav .logo {
     .card {
         width: 50%;
         height: 100%;
+    }
+}
+@media (max-width: 841px) {
+    .card {
+        width: 50%;
+        height: 50%;
+    }
+    .nutrition__section {
+        padding-bottom: 1000px;
     }
 }
